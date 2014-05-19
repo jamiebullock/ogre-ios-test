@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D8F630D192A8D3500B412DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8F630C192A8D3500B412DC /* CoreGraphics.framework */; };
+		7D8F630F192A8D3500B412DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8F630E192A8D3500B412DC /* Foundation.framework */; };
+		7D8F6311192A8D3500B412DC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8F6310192A8D3500B412DC /* OpenGLES.framework */; };
+		7D8F6313192A8D3500B412DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8F6312192A8D3500B412DC /* QuartzCore.framework */; };
+		7D8F6315192A8D3500B412DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8F6314192A8D3500B412DC /* UIKit.framework */; };
+		7D8F631C192A8D3500B412DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D8F631A192A8D3500B412DC /* InfoPlist.strings */; };
+		7D8F631E192A8D3500B412DC /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F631D192A8D3500B412DC /* main.mm */; };
+		7D8F6322192A8D3500B412DC /* OgreDemoApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F6321192A8D3500B412DC /* OgreDemoApp.cpp */; };
+		7D8F6325192A8D3500B412DC /* OgreFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F6324192A8D3500B412DC /* OgreFramework.cpp */; };
+		7D8F636E192A8D3600B412DC /* ogre.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8F636D192A8D3600B412DC /* ogre.cfg */; };
+		7D8F6370192A8D3600B412DC /* plugins.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8F636F192A8D3600B412DC /* plugins.cfg */; };
+		7D8F6372192A8D3600B412DC /* resources.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8F6371192A8D3600B412DC /* resources.cfg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D8F6309192A8D3500B412DC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D8F630C192A8D3500B412DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D8F630E192A8D3500B412DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D8F6310192A8D3500B412DC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7D8F6312192A8D3500B412DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7D8F6314192A8D3500B412DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D8F6318192A8D3500B412DC /* test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Prefix.pch"; sourceTree = "<group>"; };
+		7D8F6319192A8D3500B412DC /* test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
+		7D8F631B192A8D3500B412DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D8F631D192A8D3500B412DC /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		7D8F6320192A8D3500B412DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7D8F6321192A8D3500B412DC /* OgreDemoApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OgreDemoApp.cpp; sourceTree = "<group>"; };
+		7D8F6323192A8D3500B412DC /* OgreDemoApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreDemoApp.h; sourceTree = "<group>"; };
+		7D8F6324192A8D3500B412DC /* OgreFramework.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OgreFramework.cpp; sourceTree = "<group>"; };
+		7D8F6326192A8D3500B412DC /* OgreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreFramework.h; sourceTree = "<group>"; };
+		7D8F6327192A8D3500B412DC /* OgreStaticPluginLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreStaticPluginLoader.h; sourceTree = "<group>"; };
+		7D8F632C192A8D3600B412DC /* Examples.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = Examples.material; sourceTree = "<group>"; };
+		7D8F632D192A8D3600B412DC /* Ogre.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ogre.material; sourceTree = "<group>"; };
+		7D8F632F192A8D3600B412DC /* GreenSkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreenSkin.jpg; sourceTree = "<group>"; };
+		7D8F6330192A8D3600B412DC /* spheremap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spheremap.png; sourceTree = "<group>"; };
+		7D8F6331192A8D3600B412DC /* tusk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tusk.jpg; sourceTree = "<group>"; };
+		7D8F6333192A8D3600B412DC /* ogrehead.mesh */ = {isa = PBXFileReference; lastKnownFileType = file; path = ogrehead.mesh; sourceTree = "<group>"; };
+		7D8F6335192A8D3600B412DC /* cubemap.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = cubemap.zip; sourceTree = "<group>"; };
+		7D8F6336192A8D3600B412DC /* cubemapsJS.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = cubemapsJS.zip; sourceTree = "<group>"; };
+		7D8F6337192A8D3600B412DC /* SdkTrays.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = SdkTrays.zip; sourceTree = "<group>"; };
+		7D8F6338192A8D3600B412DC /* skybox.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = skybox.zip; sourceTree = "<group>"; };
+		7D8F633A192A8D3600B412DC /* FFPLib_Common.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.cg; sourceTree = "<group>"; };
+		7D8F633B192A8D3600B412DC /* FFPLib_Common.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.glsl; sourceTree = "<group>"; };
+		7D8F633C192A8D3600B412DC /* FFPLib_Common.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.glsles; sourceTree = "<group>"; };
+		7D8F633D192A8D3600B412DC /* FFPLib_Common.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.hlsl; sourceTree = "<group>"; };
+		7D8F633E192A8D3600B412DC /* FFPLib_Fog.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.cg; sourceTree = "<group>"; };
+		7D8F633F192A8D3600B412DC /* FFPLib_Fog.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.glsl; sourceTree = "<group>"; };
+		7D8F6340192A8D3600B412DC /* FFPLib_Fog.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.glsles; sourceTree = "<group>"; };
+		7D8F6341192A8D3600B412DC /* FFPLib_Fog.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.hlsl; sourceTree = "<group>"; };
+		7D8F6342192A8D3600B412DC /* FFPLib_Lighting.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.cg; sourceTree = "<group>"; };
+		7D8F6343192A8D3600B412DC /* FFPLib_Lighting.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.glsl; sourceTree = "<group>"; };
+		7D8F6344192A8D3600B412DC /* FFPLib_Lighting.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.glsles; sourceTree = "<group>"; };
+		7D8F6345192A8D3600B412DC /* FFPLib_Lighting.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.hlsl; sourceTree = "<group>"; };
+		7D8F6346192A8D3600B412DC /* FFPLib_Texturing.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.cg; sourceTree = "<group>"; };
+		7D8F6347192A8D3600B412DC /* FFPLib_Texturing.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.glsl; sourceTree = "<group>"; };
+		7D8F6348192A8D3600B412DC /* FFPLib_Texturing.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.glsles; sourceTree = "<group>"; };
+		7D8F6349192A8D3600B412DC /* FFPLib_Texturing.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.hlsl; sourceTree = "<group>"; };
+		7D8F634A192A8D3600B412DC /* FFPLib_Transform.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.cg; sourceTree = "<group>"; };
+		7D8F634B192A8D3600B412DC /* FFPLib_Transform.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.glsl; sourceTree = "<group>"; };
+		7D8F634C192A8D3600B412DC /* FFPLib_Transform.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.glsles; sourceTree = "<group>"; };
+		7D8F634D192A8D3600B412DC /* FFPLib_Transform.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.hlsl; sourceTree = "<group>"; };
+		7D8F634F192A8D3600B412DC /* HardwareSkinningShadow.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = HardwareSkinningShadow.cg; sourceTree = "<group>"; };
+		7D8F6350192A8D3600B412DC /* HardwareSkinningShadow.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = HardwareSkinningShadow.material; sourceTree = "<group>"; };
+		7D8F6351192A8D3600B412DC /* RTShaderSystem.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = RTShaderSystem.material; sourceTree = "<group>"; };
+		7D8F6352192A8D3600B412DC /* SampleLib_InstancedViewports.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_InstancedViewports.cg; sourceTree = "<group>"; };
+		7D8F6353192A8D3600B412DC /* SampleLib_InstancedViewports.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_InstancedViewports.glsl; sourceTree = "<group>"; };
+		7D8F6354192A8D3600B412DC /* SampleLib_InstancedViewports.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_InstancedViewports.hlsl; sourceTree = "<group>"; };
+		7D8F6355192A8D3600B412DC /* SampleLib_ReflectionMap.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.cg; sourceTree = "<group>"; };
+		7D8F6356192A8D3600B412DC /* SampleLib_ReflectionMap.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.glsl; sourceTree = "<group>"; };
+		7D8F6357192A8D3600B412DC /* SampleLib_ReflectionMap.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.glsles; sourceTree = "<group>"; };
+		7D8F6358192A8D3600B412DC /* SampleLib_ReflectionMap.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.hlsl; sourceTree = "<group>"; };
+		7D8F6359192A8D3600B412DC /* SGXLib_IntegratedPSSM.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.cg; sourceTree = "<group>"; };
+		7D8F635A192A8D3600B412DC /* SGXLib_IntegratedPSSM.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.glsl; sourceTree = "<group>"; };
+		7D8F635B192A8D3600B412DC /* SGXLib_IntegratedPSSM.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.glsles; sourceTree = "<group>"; };
+		7D8F635C192A8D3600B412DC /* SGXLib_IntegratedPSSM.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.hlsl; sourceTree = "<group>"; };
+		7D8F635D192A8D3600B412DC /* SGXLib_LayeredBlending.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.cg; sourceTree = "<group>"; };
+		7D8F635E192A8D3600B412DC /* SGXLib_LayeredBlending.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.glsl; sourceTree = "<group>"; };
+		7D8F635F192A8D3600B412DC /* SGXLib_LayeredBlending.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.glsles; sourceTree = "<group>"; };
+		7D8F6360192A8D3600B412DC /* SGXLib_LayeredBlending.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.hlsl; sourceTree = "<group>"; };
+		7D8F6361192A8D3600B412DC /* SGXLib_NormalMapLighting.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.cg; sourceTree = "<group>"; };
+		7D8F6362192A8D3600B412DC /* SGXLib_NormalMapLighting.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.glsl; sourceTree = "<group>"; };
+		7D8F6363192A8D3600B412DC /* SGXLib_NormalMapLighting.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.glsles; sourceTree = "<group>"; };
+		7D8F6364192A8D3600B412DC /* SGXLib_NormalMapLighting.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.hlsl; sourceTree = "<group>"; };
+		7D8F6365192A8D3600B412DC /* SGXLib_PerPixelLighting.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.cg; sourceTree = "<group>"; };
+		7D8F6366192A8D3600B412DC /* SGXLib_PerPixelLighting.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.glsl; sourceTree = "<group>"; };
+		7D8F6367192A8D3600B412DC /* SGXLib_PerPixelLighting.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.glsles; sourceTree = "<group>"; };
+		7D8F6368192A8D3600B412DC /* SGXLib_PerPixelLighting.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.hlsl; sourceTree = "<group>"; };
+		7D8F6369192A8D3600B412DC /* SGXLib_TextureAtlas.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_TextureAtlas.cg; sourceTree = "<group>"; };
+		7D8F636A192A8D3600B412DC /* SGXLib_TextureAtlas.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_TextureAtlas.glsl; sourceTree = "<group>"; };
+		7D8F636B192A8D3600B412DC /* SGXLib_TextureAtlas.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_TextureAtlas.glsles; sourceTree = "<group>"; };
+		7D8F636C192A8D3600B412DC /* SGXLib_TextureAtlas.hlsl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SGXLib_TextureAtlas.hlsl; path = ..; sourceTree = "<group>"; };
+		7D8F636D192A8D3600B412DC /* ogre.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = ogre.cfg; sourceTree = "<group>"; };
+		7D8F636F192A8D3600B412DC /* plugins.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = plugins.cfg; sourceTree = "<group>"; };
+		7D8F6371192A8D3600B412DC /* resources.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = resources.cfg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D8F6305192A8D3500B412DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8F6313192A8D3500B412DC /* QuartzCore.framework in Frameworks */,
+				7D8F630D192A8D3500B412DC /* CoreGraphics.framework in Frameworks */,
+				7D8F630F192A8D3500B412DC /* Foundation.framework in Frameworks */,
+				7D8F6311192A8D3500B412DC /* OpenGLES.framework in Frameworks */,
+				7D8F6315192A8D3500B412DC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D8F62FF192A8D3500B412DC = {
+			isa = PBXGroup;
+			children = (
+				7D8F6316192A8D3500B412DC /* test */,
+				7D8F630B192A8D3500B412DC /* Frameworks */,
+				7D8F630A192A8D3500B412DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D8F630A192A8D3500B412DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F6309192A8D3500B412DC /* test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D8F630B192A8D3500B412DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F630C192A8D3500B412DC /* CoreGraphics.framework */,
+				7D8F630E192A8D3500B412DC /* Foundation.framework */,
+				7D8F6310192A8D3500B412DC /* OpenGLES.framework */,
+				7D8F6312192A8D3500B412DC /* QuartzCore.framework */,
+				7D8F6314192A8D3500B412DC /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D8F6316192A8D3500B412DC /* test */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F631A192A8D3500B412DC /* InfoPlist.strings */,
+				7D8F631D192A8D3500B412DC /* main.mm */,
+				7D8F631F192A8D3500B412DC /* Basic Ogre Framework */,
+				7D8F6328192A8D3600B412DC /* Resources */,
+				7D8F6317192A8D3500B412DC /* Supporting Files */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		7D8F6317192A8D3500B412DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F6318192A8D3500B412DC /* test-Prefix.pch */,
+				7D8F6319192A8D3500B412DC /* test-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D8F631F192A8D3500B412DC /* Basic Ogre Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F6320192A8D3500B412DC /* AppDelegate.h */,
+				7D8F6321192A8D3500B412DC /* OgreDemoApp.cpp */,
+				7D8F6323192A8D3500B412DC /* OgreDemoApp.h */,
+				7D8F6324192A8D3500B412DC /* OgreFramework.cpp */,
+				7D8F6326192A8D3500B412DC /* OgreFramework.h */,
+				7D8F6327192A8D3500B412DC /* OgreStaticPluginLoader.h */,
+			);
+			name = "Basic Ogre Framework";
+			sourceTree = "<group>";
+		};
+		7D8F6328192A8D3600B412DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F636D192A8D3600B412DC /* ogre.cfg */,
+				7D8F636F192A8D3600B412DC /* plugins.cfg */,
+				7D8F6371192A8D3600B412DC /* resources.cfg */,
+				7D8F6329192A8D3600B412DC /* media */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7D8F6329192A8D3600B412DC /* media */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F632A192A8D3600B412DC /* materials */,
+				7D8F6332192A8D3600B412DC /* models */,
+				7D8F6334192A8D3600B412DC /* packs */,
+				7D8F6339192A8D3600B412DC /* RTShaderLib */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		7D8F632A192A8D3600B412DC /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F632B192A8D3600B412DC /* scripts */,
+				7D8F632E192A8D3600B412DC /* textures */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		7D8F632B192A8D3600B412DC /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F632C192A8D3600B412DC /* Examples.material */,
+				7D8F632D192A8D3600B412DC /* Ogre.material */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		7D8F632E192A8D3600B412DC /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F632F192A8D3600B412DC /* GreenSkin.jpg */,
+				7D8F6330192A8D3600B412DC /* spheremap.png */,
+				7D8F6331192A8D3600B412DC /* tusk.jpg */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		7D8F6332192A8D3600B412DC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F6333192A8D3600B412DC /* ogrehead.mesh */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7D8F6334192A8D3600B412DC /* packs */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F6335192A8D3600B412DC /* cubemap.zip */,
+				7D8F6336192A8D3600B412DC /* cubemapsJS.zip */,
+				7D8F6337192A8D3600B412DC /* SdkTrays.zip */,
+				7D8F6338192A8D3600B412DC /* skybox.zip */,
+			);
+			path = packs;
+			sourceTree = "<group>";
+		};
+		7D8F6339192A8D3600B412DC /* RTShaderLib */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F633A192A8D3600B412DC /* FFPLib_Common.cg */,
+				7D8F633B192A8D3600B412DC /* FFPLib_Common.glsl */,
+				7D8F633C192A8D3600B412DC /* FFPLib_Common.glsles */,
+				7D8F633D192A8D3600B412DC /* FFPLib_Common.hlsl */,
+				7D8F633E192A8D3600B412DC /* FFPLib_Fog.cg */,
+				7D8F633F192A8D3600B412DC /* FFPLib_Fog.glsl */,
+				7D8F6340192A8D3600B412DC /* FFPLib_Fog.glsles */,
+				7D8F6341192A8D3600B412DC /* FFPLib_Fog.hlsl */,
+				7D8F6342192A8D3600B412DC /* FFPLib_Lighting.cg */,
+				7D8F6343192A8D3600B412DC /* FFPLib_Lighting.glsl */,
+				7D8F6344192A8D3600B412DC /* FFPLib_Lighting.glsles */,
+				7D8F6345192A8D3600B412DC /* FFPLib_Lighting.hlsl */,
+				7D8F6346192A8D3600B412DC /* FFPLib_Texturing.cg */,
+				7D8F6347192A8D3600B412DC /* FFPLib_Texturing.glsl */,
+				7D8F6348192A8D3600B412DC /* FFPLib_Texturing.glsles */,
+				7D8F6349192A8D3600B412DC /* FFPLib_Texturing.hlsl */,
+				7D8F634A192A8D3600B412DC /* FFPLib_Transform.cg */,
+				7D8F634B192A8D3600B412DC /* FFPLib_Transform.glsl */,
+				7D8F634C192A8D3600B412DC /* FFPLib_Transform.glsles */,
+				7D8F634D192A8D3600B412DC /* FFPLib_Transform.hlsl */,
+				7D8F634E192A8D3600B412DC /* materials */,
+				7D8F6352192A8D3600B412DC /* SampleLib_InstancedViewports.cg */,
+				7D8F6353192A8D3600B412DC /* SampleLib_InstancedViewports.glsl */,
+				7D8F6354192A8D3600B412DC /* SampleLib_InstancedViewports.hlsl */,
+				7D8F6355192A8D3600B412DC /* SampleLib_ReflectionMap.cg */,
+				7D8F6356192A8D3600B412DC /* SampleLib_ReflectionMap.glsl */,
+				7D8F6357192A8D3600B412DC /* SampleLib_ReflectionMap.glsles */,
+				7D8F6358192A8D3600B412DC /* SampleLib_ReflectionMap.hlsl */,
+				7D8F6359192A8D3600B412DC /* SGXLib_IntegratedPSSM.cg */,
+				7D8F635A192A8D3600B412DC /* SGXLib_IntegratedPSSM.glsl */,
+				7D8F635B192A8D3600B412DC /* SGXLib_IntegratedPSSM.glsles */,
+				7D8F635C192A8D3600B412DC /* SGXLib_IntegratedPSSM.hlsl */,
+				7D8F635D192A8D3600B412DC /* SGXLib_LayeredBlending.cg */,
+				7D8F635E192A8D3600B412DC /* SGXLib_LayeredBlending.glsl */,
+				7D8F635F192A8D3600B412DC /* SGXLib_LayeredBlending.glsles */,
+				7D8F6360192A8D3600B412DC /* SGXLib_LayeredBlending.hlsl */,
+				7D8F6361192A8D3600B412DC /* SGXLib_NormalMapLighting.cg */,
+				7D8F6362192A8D3600B412DC /* SGXLib_NormalMapLighting.glsl */,
+				7D8F6363192A8D3600B412DC /* SGXLib_NormalMapLighting.glsles */,
+				7D8F6364192A8D3600B412DC /* SGXLib_NormalMapLighting.hlsl */,
+				7D8F6365192A8D3600B412DC /* SGXLib_PerPixelLighting.cg */,
+				7D8F6366192A8D3600B412DC /* SGXLib_PerPixelLighting.glsl */,
+				7D8F6367192A8D3600B412DC /* SGXLib_PerPixelLighting.glsles */,
+				7D8F6368192A8D3600B412DC /* SGXLib_PerPixelLighting.hlsl */,
+				7D8F6369192A8D3600B412DC /* SGXLib_TextureAtlas.cg */,
+				7D8F636A192A8D3600B412DC /* SGXLib_TextureAtlas.glsl */,
+				7D8F636B192A8D3600B412DC /* SGXLib_TextureAtlas.glsles */,
+				7D8F636C192A8D3600B412DC /* SGXLib_TextureAtlas.hlsl */,
+			);
+			path = RTShaderLib;
+			sourceTree = "<group>";
+		};
+		7D8F634E192A8D3600B412DC /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F634F192A8D3600B412DC /* HardwareSkinningShadow.cg */,
+				7D8F6350192A8D3600B412DC /* HardwareSkinningShadow.material */,
+				7D8F6351192A8D3600B412DC /* RTShaderSystem.material */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D8F6308192A8D3500B412DC /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D8F6375192A8D3600B412DC /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				7D8F6304192A8D3500B412DC /* Sources */,
+				7D8F6305192A8D3500B412DC /* Frameworks */,
+				7D8F6306192A8D3500B412DC /* Resources */,
+				7D8F6307192A8D3500B412DC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = 7D8F6309192A8D3500B412DC /* test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D8F6300192A8D3500B412DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 7D8F6303192A8D3500B412DC /* Build configuration list for PBXProject "test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D8F62FF192A8D3500B412DC;
+			productRefGroup = 7D8F630A192A8D3500B412DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D8F6308192A8D3500B412DC /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D8F6306192A8D3500B412DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8F631C192A8D3500B412DC /* InfoPlist.strings in Resources */,
+				7D8F636E192A8D3600B412DC /* ogre.cfg in Resources */,
+				7D8F6372192A8D3600B412DC /* resources.cfg in Resources */,
+				7D8F6370192A8D3600B412DC /* plugins.cfg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D8F6307192A8D3500B412DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# This shell script simply copies resources into their respective locations\nditto \"$PROJECT_DIR/$PROJECT_NAME/media/\" \"$BUILT_PRODUCTS_DIR/test.app/media/\"\nditto $PROJECT_DIR/$PROJECT_NAME/*.cfg \"$BUILT_PRODUCTS_DIR/test.app/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D8F6304192A8D3500B412DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8F6325192A8D3500B412DC /* OgreFramework.cpp in Sources */,
+				7D8F631E192A8D3500B412DC /* main.mm in Sources */,
+				7D8F6322192A8D3500B412DC /* OgreDemoApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D8F631A192A8D3500B412DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8F631B192A8D3500B412DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D8F6373192A8D3600B412DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = No;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "test/test-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = No;
+				GCC_THUMB_SUPPORT = "";
+				INFOPLIST_FILE = "test/test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib/Release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib/release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D8F6374192A8D3600B412DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = No;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "test/test-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = No;
+				GCC_THUMB_SUPPORT = "";
+				INFOPLIST_FILE = "test/test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib/Release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib/release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7D8F6376192A8D3600B412DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/Overlay\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RenderSystems/GLES2\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RTShaderSystem\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/iOS\"",
+					"\"$(OGRE_SDK_ROOT)/include\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/include\"",
+				);
+				OGRE_SDK_ROOT = /Users/jamie/Desktop/OgreSDK;
+				OTHER_CFLAGS = "-DOGRE_USE_GLES2=1";
+				OTHER_LDFLAGS = (
+					"-lOIS",
+					"-lOgreMainStatic",
+					"-lOgreOverlayStatic",
+					"-lRenderSystem_GLES2Static",
+					"-lOgreRTShaderSystemStatic",
+					"-lglsl_optimizer",
+					"-lboost_system",
+					"-lboost_chrono",
+					"-lboost_date_time",
+					"-lboost_thread",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lzzip",
+					"-lz",
+				);
+			};
+			name = Debug;
+		};
+		7D8F6377192A8D3600B412DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/Overlay\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RenderSystems/GLES2\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RTShaderSystem\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/iOS\"",
+					"\"$(OGRE_SDK_ROOT)/include\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/include\"",
+				);
+				OGRE_SDK_ROOT = /Users/jamie/Desktop/OgreSDK;
+				OTHER_CFLAGS = "-DOGRE_USE_GLES2=1";
+				OTHER_LDFLAGS = (
+					"-lOIS",
+					"-lOgreMainStatic",
+					"-lOgreOverlayStatic",
+					"-lRenderSystem_GLES2Static",
+					"-lOgreRTShaderSystemStatic",
+					"-lglsl_optimizer",
+					"-lboost_system",
+					"-lboost_chrono",
+					"-lboost_date_time",
+					"-lboost_thread",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lzzip",
+					"-lz",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D8F6303192A8D3500B412DC /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D8F6373192A8D3600B412DC /* Debug */,
+				7D8F6374192A8D3600B412DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D8F6375192A8D3600B412DC /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D8F6376192A8D3600B412DC /* Debug */,
+				7D8F6377192A8D3600B412DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D8F6300192A8D3500B412DC /* Project object */;
+}
